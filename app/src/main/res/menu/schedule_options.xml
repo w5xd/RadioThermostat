@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menuSchedOptionsCopyToThermo"
+        android:title="@string/scheduleOptionsCopyToThermo">
+    </item>
+	<item android:id="@+id/menuSchedOptionsMakeLocalCopy"
+        android:title="@string/scheduleOptionsMakeLocalCopy"/>
+	<item android:id="@+id/menuSchedOptionsUseLocalCopy"
+        android:title="@string/scheduleOptionsUseLocalCopy"/>
+</menu>

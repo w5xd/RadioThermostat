@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/mainLeftLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_border"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/currentLabel"
+                        android:textSize="20dp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal" >
+
+                        <TextView
+                            android:id="@+id/textViewCurrentTemp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="55"
+                            android:textSize="60sp" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textViewCurrentTempTenths"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/textViewCurrentTemp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/textViewCurrentTemp"
+                            android:text="5"
+                            android:textSize="30sp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textViewHvacState"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IDLE"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textViewScheduleState"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Schedule: on hold"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/main_border"
+                    android:orientation="vertical" ><TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/targetLabel"
+                        android:textSize="20dp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal" >
+
+                        <TextView
+                            android:id="@+id/textViewTarget"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="55"
+                            android:textSize="60sp" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textViewTargetTempTenths"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/textViewTarget"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/textViewTarget"
+                            android:text="5"
+                            android:textSize="30sp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textViewHvacMode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HEAT"
+                        android:textSize="20dp" />
+<LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fanLabel"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/textViewFanMode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:text="continuous"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+			    android:id="@+id/textThermostatName" android:textSize="20dp"  android:text="My Name"/>/
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/buttonRefresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/btnRefreshLabel"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/buttonChange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/btnChangeSettingsLabel"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/buttonSchedule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/btnEditScheduleLabel"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/buttonPrevUrl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/urlLabel" />
+
+                <EditText
+                    android:id="@+id/editTextUrl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/buttonPrevUrl"
+                    android:inputType="textUri"
+                    android:text="http://192.168.1.100:8100" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewMainError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>

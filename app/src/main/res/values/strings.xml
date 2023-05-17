@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pocket Thermostat</string>
+    <string name="schedule_activity_name">Pocket Thermostat Edit Schedule</string>
+    <string name="command_activity_name">Pocket Thermostat Change Thermostat</string>
+    <string name="morning">Morning</string>
+    <string name="day">Day</string>
+    <string name="evening">Evening</string>
+    <string name="night">Night</string>
+	<string name="temperatureLabel">T</string>
+	<string name="timeLabel">Time</string>
+    <string name="fanModeLabel">Fan mode:</string>
+	<string name="hvacModeLabel">HVAC mode:</string>
+	<string name="holdModeLabel">Set or clear HOLD</string>
+	<string name="setTemperatureLabel">Set target</string>
+	<string name="setTemperatureButtonLabel">Set</string>
+	<string name="replaceScheduleButtonLabel">Replace Schedule in Thermostat</string>
+	<string name="readScheduleButtonLabel">Copy from thermostat</string>
+	<string name="currentLabel">current</string>
+	<string name="targetLabel">target</string>
+	<string name="scheduleOptionsCopyToThermo">Copy schedule to thermostat</string>
+	<string name="scheduleOptionsMakeLocalCopy">Save on phone</string>
+	<string name="scheduleOptionsUseLocalCopy">Copy from phone</string>
+	<string name="urlLabel">URL:</string>
+	<string name="urlListLabel">Select from previous URLS</string>
+	<string name="btnRefreshLabel">Refresh</string>
+	<string name="btnChangeSettingsLabel">Change&#8230;</string>
+	<string name="btnEditScheduleLabel">Schedule&#8230;</string>
+	<string name="fanLabel">Fan:</string>
+	<string name="msgNullSchedule">null schedule</string>
+	<string name="msgIncompleteSchedule">incomplete schedule</string>
+	<string name="msgInvalidScheduleEntry">Fix invalid schedule entry</string>
+	<string name="msgInvalidEntry">Fix invalid entry</string>
+	<string name="msgReadingThermostat">Communicating with thermostat&#8230;</string>
+	<string name="msgHttpError">Unspecified communication error</string>
+	<string name="msgMustGoThruOff">Must go through OFF mode</string>
+	<string name="msgInvalidNoBlankWithHold">Blank temperature only valid on schedule resume</string>
+	<string name="mainOptionsUnits">Units&#8230;</string>
+	<string name="mainOptionsUnitC">Celsius</string>
+	<string name="mainOptionsUnitF">Fahrenheit</string>
+	<string name="mainOptionsClearUrls">Forget URLs&#8230;</string>
+	<string name="mainOptionsClearUrlsConfirm">Confirm forget URLs</string>
+	<string name="buttonThermoNameLabel">Change name</string>
+	<string name="msgUpdateName">Change name at thermometer?</string>
+	<string name="msgOK">OK</string>
+	<string name="msgCancel">Cancel</string>
+	
+	<string name="dayOw0">Mon</string>
+	<string name="dayOw1">Tue</string>
+	<string name="dayOw2">Wed</string>
+	<string name="dayOw3">Thu</string>
+	<string name="dayOw4">Fri</string>
+	<string name="dayOw5">Sat</string>
+	<string name="dayOw6">Sun</string>
+
+    <string-array name="schedules">
+        <item>Heating Schedule</item>
+        <item>Cooling Schedule</item>
+    </string-array>
+    
+    <string-array name="days_of_week">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+     </string-array>
+    
+    <string-array name="thermostat_modes">
+        <item>OFF</item>
+        <item>HEAT</item>
+        <item>COOL</item>
+        <item>AUTO</item>
+    </string-array>
+    
+    <string-array name="hold_modes">
+        <item>Until scheduled</item>
+        <item>Hold indefinitely</item>
+    </string-array>
+    
+    <string-array name="thermostat_states">
+        <item>IDLE</item>
+        <item>HEATING</item>
+        <item>COOLING</item>
+    </string-array>
+    
+    <string-array name="fan_modes">
+        <item>Auto</item>
+        <item>Auto/circulate</item>
+        <item>Continuous</item>
+        </string-array>
+        
+    <string-array name="hold_states">
+        <item>Schedule: Active</item>
+        <item>Schedule: on hold</item>
+    </string-array>
+</resources>

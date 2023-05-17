@@ -1,0 +1,10 @@
+app/build
+app/app.iml
+app/release
+app/debug
+local.properties
+*.jar
+.gradle
+.idea
+*.swp
+*~

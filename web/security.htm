@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width"> 
+    <title>Pocket Thermostat Security</title>
+</head>
+<body>
+<h2>Security</h2>
+Pocket Thermostat 
+    communicates directly with the 3M-50 thermostat using their published API. 
+    It does not access the <a href="http://radiothermostat.com">radiothermostat.com</a> website, 
+    and you need not have your thermostat registered there for Pocket Thermostat to work. Pocket 
+    Thermostat does not provide encryption or any other security. Using it securely depends on your use of it as described below.<br />
+    
+    <h3>Recommendations</h3>Pocket Thermostat can only communicate with your 
+    thermostat if your thermostat's Wi-Fi URL is accessible from your Android phone. 
+    If you&#39;re at home then your phone, if its Wi-Fi radio is enabled, can reach your thermostat 
+    because both are on the same Wi-Fi network. Your home Wi-Fi installation should use strong encryption on 
+    its radio link, which protects your Wi-Fi network, including your thermostat, from snooping. WPA is recommended. 
+    WEP is better than no encryption, but there are easily-used published crackers for WEP. 
+    
+    <p>A typical home Wi-Fi installation has a <a href="http://en.wikipedia.org/wiki/Network_address_translation">NAT</a> 
+    router which, unless you use its adminstrator capabilities to publish the thermostat server on the internet, restricts 
+    access to your thermostat to within your home&#39;s LAN (local area network) and forbids access from any source on the 
+    internet outside. Because the thermostat itself provides no security, it is strongly recommended that you do <b>not</b> 
+    ever use your router to publish your thermostat's web server port 80 on the internet!</p>
+    <h3>Encrypting control from the internet</h3>
+    This is an advanced topic that is only summarized here. If you have a computer that runs 24 hours per day x 7 days per week, 
+    and is inside your NAT router network, and has an openssl server installed and running, you can arrange for encrpyted control 
+    from your Android phone from anywhere in the world via the internet. Here is a summary of how to set up such a configuration:
+ <ul><li>install an <a href='http://www.openssl.org'>openssl</a> server running 24x7 inside your NAT firewall. I use, for example, 
+     an old Dell laptop running a recent version of Ubuntu linux.</li>
+     <li>Arrange for your NAT router&#39;s wide-area-network (WAN) IP address, which can change over time, to be published on the 
+     world-wide-web such that it can be looked up on the internet. I use the free service at <a href='http://www.no-ip.com'>http://www.no-ip.com.</a></li>
+ <li>Configure your home NAT router to forward incoming internet SSL connections on TCP port 22 to your openssl server.</li>
+ <li>Install the <a href="http://code.google.com/p/connectbot/">Connect Bot</a> App on your Android phone.</li>
+ <li>Use Connect Bot on your phone to login to an account on your openssl machine, and set ConnectBot&#39;s "Port Foward" 
+     for some port on your Android phone (I use number 8100, for example) to forward to port 80 on your thermostat's IP address 
+     inside your Wi-Fi NAT router. (My thermostat is on 10.0.0.75:80, for example)</li>
+     <li>In Pocket Thermostat, specify the forwarded port to connect to your thermostat (http://localhost:8100 in my example). 
+     In this configuration, the Pocket Thermostat messages over the internet are encrypted using SSL.</li>
+     <li>With all the above in place, Pocket Thermostat on your phone can securely communicate with your thermostat. This is 
+     just a summary of an example. There may be other ways to encypt communication from your phone to your within your home router.</li>
+ </ul>  
+
+</body>
+</html>

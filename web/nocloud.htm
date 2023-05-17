@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width"> 
+    <title>Pocket Thermostat disconnect from cloud</title>
+</head>
+<body>
+<h3>Disconnect from the cloud</h3>
+Use a browser (either on your Android or on a desktop machine) to browse to your thermostat's 
+    "home" page. This page can be reached by typing in only the IP address without any futher qualification. 
+    In my own case, it is http://10.0.0.75. On that page, the thermostat offers a "Cloud URL:" setting, which, by default on my 
+    own device, is set to "http://ws.radiothermostat.com/services.svc/StatIn". Delete all the text in that box and then click "Submit". 
+    I used the (free) product at <a href="http://www.wireshark.org">http://www.wireshark.org</a> installed on a machine inside my Wi-Fi 
+    network to verify that my thermostat no longer attempts to make connections to the radiothermostat website. 
+<img src="nocloud.png" height="100%" width="100%"/>
+<br />In my case, it is also possible to configure my NAT router to forbid my thermostat 
+    from making external internet connections, which makes redundantly sure it does not publish 
+    its state outside my Wi-Fi network.
+
+</body>
+</html>

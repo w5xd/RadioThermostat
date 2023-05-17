@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width"> 
+    <title>Pocket Thermostat Introduction</title>
+</head>
+<body>
+<h2>Introduction</h2>
+Here is a free Android app that can control the model 3M-50 thermostat 
+described by its manufacturer here: <a href="http://radiothermostat.com/control.html">http://radiothermostat.com/control.html.</a><p>
+    Radiothermostat.com provides a web based interface and Android app to control the thermostat remotely, but decided I really 
+    could not use that product for these reasons:</p>
+<ul>
+<li>The <a href="http://radiothermostat.com">radiothermostat.com</a> system maintains all your thermostat settings on their 
+    web server. While I have no reason to believe they fail to practice due diligence with respect to the security of my data, 
+    I prefer a software archecture that, whenever my data is outside my control, it is encrypted with strong encryption. 
+    (Imagine a burglary ring that cracks radiothermostat.com and remains undetected. They now have real time access to a 
+    world-wide database of thermostats that are set to AWAY.)</li>
+<li>As of the time I wrote this Android app, the <a href="http://radiothermostat.com">radiothermostat.com</a> Android app 
+    had no provision for editing the time and temperature schedule in the 3M-50. Only their web application could edit the 
+    thermostat schedule.</li>
+<li>The <a href="http://radiothermostat.com">radiothermostat.com</a> software architecture shares the state of your controls 
+    between their cloud web server and the device on your wall. This means that there can be race conditions that might lead to this problem: 
+<ul><li>I browse to <a href="http://radiothermostat.com">radiothermostat.com</a> and set my mode to HEAT.</li>
+<li>Within a minute or two later, I walk to the device on the wall and set it to OFF.</li>
+<li>I walk to the furnace and remove the air filter to replace it.</li>
+<li>While I have the furnace open, it comes on in HEAT mode. (I really should throw the breaker to change the filter, but, on 
+    the other hand, before I added WiFi to my thermostat, this was not necessary.)</li>
+</ul>
+&nbsp;</li>
+</ul>
+In addition to their own software package--their website and their Android and other smartphone apps--the manufacturer supplies 
+    an API that enables alternative applications: <a href="http://radiothermostat.com/latestnews.html#advanced">http://radiothermostat.com/latestnews.html#advanced</a>.
+    Pocket Thermostat exploits that API in order to address the three reasons above.
+</body>
+</html>

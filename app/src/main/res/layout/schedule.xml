@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" >
+
+                <Spinner
+                    android:id="@+id/spinnerSchedule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" >
+                </Spinner>
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="2"
+                            android:layout_gravity="right"
+                            android:text="@string/dayOw0"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:layout_column="4"
+                            android:layout_gravity="right"
+                            android:text="@string/dayOw1"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:layout_column="6"
+                            android:layout_gravity="right"
+                            android:text="@string/dayOw2"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:layout_column="8"
+                            android:layout_gravity="right"
+                            android:text="@string/dayOw3"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:layout_column="10"
+                            android:layout_gravity="right"
+                            android:text="@string/dayOw4"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:layout_column="12"
+                            android:layout_gravity="right"
+                            android:text="@string/dayOw5"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:layout_column="14"
+                            android:layout_gravity="right"
+                            android:text="@string/dayOw6"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:layout_gravity="center_vertical"
+                            android:padding="3dip"
+                            android:text="@string/morning" />
+
+                        <EditText
+                            android:id="@+id/editTextTime0_0"
+                            android:layout_column="2"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTemperature0_0"
+                            android:layout_column="3"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                             android:id="@+id/editTextTime1_0"
+                            android:layout_column="4"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                              android:id="@+id/editTextTemperature1_0"
+                            android:layout_column="5"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                             android:id="@+id/editTextTime2_0"
+                            android:layout_column="6"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                             android:id="@+id/editTextTemperature2_0"
+                            android:layout_column="7"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                             android:id="@+id/editTextTime3_0"
+                            android:layout_column="8"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                             android:id="@+id/editTextTemperature3_0"
+                            android:layout_column="9"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                             android:id="@+id/editTextTime4_0"
+                            android:layout_column="10"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                             android:id="@+id/editTextTemperature4_0"
+                            android:layout_column="11"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                             android:id="@+id/editTextTime5_0"
+                            android:layout_column="12"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                             android:id="@+id/editTextTemperature5_0"
+                            android:layout_column="13"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTime6_0"
+                            android:layout_column="14"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                             android:id="@+id/editTextTemperature6_0"
+                            android:layout_column="15"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:layout_gravity="center_vertical"
+                            android:padding="3dip"
+                            android:text="@string/day" />
+
+                        <EditText
+                            android:id="@+id/editTextTime0_1"
+                            android:layout_column="2"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTemperature0_1"
+                            android:layout_column="3"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTime1_1"
+                            android:layout_column="4"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                           android:id="@+id/editTextTemperature1_1"
+                             android:layout_column="5"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTime2_1"
+                            android:layout_column="6"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                           android:id="@+id/editTextTemperature2_1"
+                             android:layout_column="7"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTime3_1"
+                            android:layout_column="8"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTemperature3_1"
+                            android:layout_column="9"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTime4_1"
+                            android:layout_column="10"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTemperature4_1"
+                            android:layout_column="11"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTime5_1"
+                            android:layout_column="12"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTemperature5_1"
+                            android:layout_column="13"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTime6_1"
+                            android:layout_column="14"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                           android:id="@+id/editTextTemperature6_1"
+                             android:layout_column="15"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:layout_gravity="center_vertical"
+                            android:padding="3dip"
+                            android:text="@string/evening" />
+
+                        <EditText
+                            android:id="@+id/editTextTime0_2"
+                            android:layout_column="2"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTemperature0_2"
+                            android:layout_column="3"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTime1_2"
+                            android:layout_column="4"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTemperature1_2"
+                            android:layout_column="5"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTime2_2"
+                            android:layout_column="6"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                           android:id="@+id/editTextTemperature2_2"
+                            android:layout_column="7"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTime3_2"
+                            android:layout_column="8"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                           android:id="@+id/editTextTemperature3_2"
+                           android:layout_column="9"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTime4_2"
+                            android:layout_column="10"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                           android:id="@+id/editTextTemperature4_2"
+                            android:layout_column="11"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTime5_2"
+                            android:layout_column="12"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTemperature5_2"
+                            android:layout_column="13"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                             android:id="@+id/editTextTime6_2"
+                            android:layout_column="14"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                           android:id="@+id/editTextTemperature6_2"
+                            android:layout_column="15"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:layout_gravity="center_vertical"
+                            android:padding="3dip"
+                            android:text="@string/night" />
+
+                        <EditText
+                            android:id="@+id/editTextTime0_3"
+                            android:layout_column="2"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTemperature0_3"
+                            android:layout_column="3"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                             android:id="@+id/editTextTime1_3"
+                            android:layout_column="4"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTemperature1_3"
+                            android:layout_column="5"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                             android:id="@+id/editTextTime2_3"
+                            android:layout_column="6"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTemperature2_3"
+                            android:layout_column="7"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                             android:id="@+id/editTextTime3_3"
+                            android:layout_column="8"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTemperature3_3"
+                            android:layout_column="9"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                             android:id="@+id/editTextTime4_3"
+                            android:layout_column="10"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTemperature4_3"
+                            android:layout_column="11"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                             android:id="@+id/editTextTime5_3"
+                            android:layout_column="12"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextTemperature5_3"
+                            android:layout_column="13"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+
+                        <EditText
+                             android:id="@+id/editTextTime6_3"
+                            android:layout_column="14"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="time"
+                            android:text="12:00AM" >
+                        </EditText>
+
+                        <EditText
+                           android:id="@+id/editTextTemperature6_3"
+                            android:layout_column="15"
+                            android:layout_marginLeft="4dp"
+                            android:inputType="number"
+                            android:text="75" >
+                        </EditText>
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        
+    
+    
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/buttonReadSchedule"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/readScheduleButtonLabel" />
+
+            <TextView
+                android:id="@+id/textViewSchedStatus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </TextView>
+          </LinearLayout>  
+          
+    </LinearLayout>

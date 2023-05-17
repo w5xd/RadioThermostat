@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+<item android:id="@+id/menuMainOptionsUnits"
+        android:title="@string/mainOptionsUnits">
+        <menu>
+            <item android:id="@+id/menuOptionsC" android:title="@string/mainOptionsUnitC" android:checkable="true"></item>
+            <item android:id="@+id/menuOptionsF" android:title="@string/mainOptionsUnitF" android:checkable="true"></item>
+        </menu>
+    </item>
+<item android:id="@+id/menuMainOptionsClear" android:title="@string/mainOptionsClearUrls">
+    <menu>
+        <item android:id="@+id/menuOptionsClearConfirm" android:title="@string/mainOptionsClearUrlsConfirm"/>
+    </menu>
+</item>
+</menu>
